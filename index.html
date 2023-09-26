@@ -11,7 +11,7 @@
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/0c6a816720.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     
 </head>
 
@@ -25,10 +25,40 @@
 -------------------->
 
 <header>
-<nav class=" navbar navbar-expand-lg">
+<nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
 
         <a class="navbar-brand" href="index.html">Pedro Augusto</a>
+
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>   
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="ms-auto navbar-nav">
+
+                <li>
+                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                </li>
+              
+                <li>
+                    <a class="nav-link" href="#">Sobre mim</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#">Projetos</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" aria-disabled="true">Contato</a>
+                </li>
+              
+            </ul>
+
+
+
+
 
     </div>
 
@@ -37,9 +67,28 @@
 
 </header>
 
-    
+<section id="sobre_mim">
+    <div class="container">
+        <div class="row">
+            <div id="perfil" class="col-lg-6 d-flex justify-content-left">
+                
+                <h1>Sobre mim</h1>
 
-    <h1>Olá mundo</h1>
+            </div>
+
+            <div class="col-lg-6 d-flex">
+                
+                
+                <img width="1000" class="img-fluid" src="img/avatar.png">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>    
 
 
 
