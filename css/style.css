@@ -20,7 +20,7 @@ h1 {
 }
 
 .container {
-    /*border: 1px red solid;*/
+    
 }
 
 /*******************************
@@ -33,12 +33,10 @@ h1 {
     font-size: 1.25em;
 }
 
-#navbar-full {
-    @media (max-width: 750px) {
-
+@media (max-width: 768px) {
+    #nav-vertical {
         display: none;
-
-      }
+        }
 }
 
 .navbar-brand {
@@ -57,109 +55,47 @@ h1 {
     color: #222222af;
 }
 
-/*******************************
-**NAV BAR TOGGLER ANIMATION*****
-******************************
-
-.navbar-toggler {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    transition: .5s ease-in-out;
-
-}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-    border: 0;
-}
-
-.navbar-toggler span {
-    margin: 0;
-    padding: 0;
-}
-
-.toggler-icon {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #222222;
-    border-radius: 1px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-.middle-bar {
-    margin-top: 0px;
-
-}
-
-.navbar-toggler .top-bar {
-    margin-top: 0px;
-    transform: rotate(135deg);
-
-}
-
-.navbar-toggler .middle-bar {
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.navbar-toggler .bottom-bar {
-    margin-top: 0px;
-    transform: rotate(-135deg);
-}
-
-/*quando a navbar é colapsada
-
-.navbar-toggler.collapsed .top-bar {
-    margin-top: -20px;
-    transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-    margin-top: 20px;
-    transform: rotate(0deg);
-}
-
-******************************
-**NAV BAR TOGGLER ANIMATION*****
-*******************************/
-
+/*hambuger estilo e animação*/
 .hamburger {
     position: relative;
     display: block;
     width: 35px;
-    height: 35px;
     cursor: pointer;
     appearance: none;
     background: none;
     outline: none;
     border: none;
+    z-index: 99;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
     content: '';
     display: block;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    height: 5px;
+    background-color: #222222;
     margin: 6px 0px;
     transition: .6s;
 
 
 }
 
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -7px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+/*hambuger estilo e animação*/
+
+/*NAV BAR MOBILE ESTILO E ANIMAÇÃO*/
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -167,14 +103,16 @@ h1 {
     width: 100%;
     min-height: 100vh;
     display:block;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding-top: 100px;
-    transition: 0.4s;
-
+    transition: 0.3s;
+    z-index: 99;
 }
+
 
 .mobile-nav.is-active {
     left: 20%;
+
 }
 
 .mobile-nav a {
@@ -185,6 +123,78 @@ h1 {
     margin-bottom: 16px;
     padding: 12px 16px;
 }
+
+.black-box {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display:block;
+    background-color: #222222;
+    padding-top: 100px;
+
+}
+
+
+.black-box.is-active {
+    left: 0%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+        opacity: .5;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .5; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .5; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .5; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .5; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .5; }
+}
+
+.black-box.fadeout {
+    left: 0;
+    animation: fadeout 2s;
+    opacity: 0;
+}
+
+@keyframes fadeout {
+    from { opacity: 0.5; }
+    to { opacity: 0; }
+}
+
+@media (min-width: 901.98px) {
+    .hamburger {
+        display: none;
+    } 
+  }
+ 
+/*NAV BAR MOBILE ESTILO E ANIMAÇÃO*/    
 
 /*******************************
 ************NAV BAR*************
@@ -207,23 +217,40 @@ h1 {
    
   
   /*/ Small devices (landscape phones, 576px and up)*/
-  @media (min-width: 576px) and (max-width: 767.98px) {
+  @media (min-width: 576px) and (max-width: 901.98px) {
 
     body {
         margin: 0px;
     }
-  
+
+    #nav-vertical {
+        display: none;
+    }
 
   }
   
   /*/ Medium devices (tablets, 768px and up)*/
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 902px) and (max-width: 991.98px) {
 
-  
+    .nav-link {
+        position: relative;
+        font-size: 15px;
+        margin-left: 25px;
+        color: #222222af;
+        border: 1px red solid;
+    }
+
   }
   
   /*/ Large devices (desktops, 992px and up)*/
   @media (min-width: 992px) and (max-width: 1199.98px) {
+    
+
+    .nav-link {
+        font-size: 15px;
+        margin-left: 25px;
+        color: #222222af;
+    }
   
   
   }
