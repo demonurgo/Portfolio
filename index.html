@@ -25,16 +25,19 @@
 -------------------->
 
 <header>
-<nav class="navbar sticky-top navbar-expand-lg">
+<nav class="navbar navbar-expand-lg">
     <div class="container">
 
         <a class="navbar-brand" href="index.html">Pedro Augusto</a>
 
-        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- HAMBURGER BOTÃO -->
+        <button class="hamburger sticky-top navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon top-bar"></span>
             <span class="toggler-icon middle-bar"></span>
             <span class="toggler-icon bottom-bar"></span>
         </button>   
+        <!-- HAMBURGER BOTÃO -->
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="ms-auto navbar-nav">
 
@@ -67,10 +70,31 @@
 
 </header>
 
+<nav class="mobile-nav">
+    <ul class="navbar-nav">
+        <li>
+            <a class="nav-link" href="">Início</a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="">Sobre mim</a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="">Projetos</a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="">Contato</a>
+        </li>
+    </ul>
+
+</nav>
+
 <section id="sobre_mim">
     <div class="container">
         <div class="row">
-            <div id="perfil" class="col-lg-6 d-flex justify-content-left">
+            <div class="col-lg-6 d-flex">
                 
                 <h1>Sobre mim</h1>
 
@@ -79,7 +103,7 @@
             <div class="col-lg-6 d-flex">
                 
                 
-                <img width="1000" class="img-fluid" src="img/avatar.png">
+                <img width="400" class="img-fluid" src="img/avatar.png">
 
             </div>
         </div>
