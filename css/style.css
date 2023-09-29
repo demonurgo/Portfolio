@@ -11,7 +11,23 @@ body {
 }
 
 h1 {
+    font-family: 'Sunday-Masterhead';
+    letter-spacing: 3px;
+    font-size: 70px;
     color: #222222;
+}
+
+p {
+    font-family: 'LilGrotesk-Medium';
+    letter-spacing: .5px;
+    color: #222222;
+
+}
+
+
+@font-face {
+    font-family: 'Sunday-Masterhead';
+    src: url(SundayMasthead-Regular.otf);
 }
 
 @font-face {
@@ -19,8 +35,22 @@ h1 {
     src: url(Optician-Sans.otf);
 }
 
+@font-face {
+    font-family: 'LilGrotesk-Medium';
+    src: url(LilGrotesk-Medium.otf);
+}
+
+
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+
 .container {
-    
+    border: 1px solid ;*/
 }
 
 /*******************************
@@ -41,7 +71,7 @@ h1 {
 
 .navbar-brand {
     /*border: 1px red solid;*/
-    font-size: 25px;
+    font-size: 35px;
     color: #222222;
     font-family: 'Optician';
     font-weight: 500;
@@ -106,7 +136,7 @@ h1 {
     background-color: #ffffff;
     padding-top: 100px;
     transition: 0.3s;
-    z-index: 99;
+    z-index: 98;
 }
 
 
@@ -200,14 +230,24 @@ h1 {
 ************NAV BAR*************
 *******************************/
 
+.list-sobre-mim {
+    list-style: none;
+    font-size: larger;
+    padding: 0px;
+    margin: 0px;
 
+}
 
+li p i {
+    margin-right: 10px;
+}
 
 /*/ Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
     body {
         margin: 0px;
+        min-width: 575px;
     }
 
 
@@ -220,10 +260,15 @@ h1 {
   @media (min-width: 576px) and (max-width: 901.98px) {
 
     body {
-        margin: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 25px;
+            margin-right: 25px;
+
     }
 
     #nav-vertical {
+        
         display: none;
     }
 
@@ -232,23 +277,29 @@ h1 {
   /*/ Medium devices (tablets, 768px and up)*/
   @media (min-width: 902px) and (max-width: 991.98px) {
 
-    .nav-link {
-        position: relative;
-        font-size: 15px;
+    body {
+        margin-top: 100px;
         margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .nav-link {
+
+        font-size: 15px;
+        margin-left: 20px;
         color: #222222af;
-        border: 1px red solid;
+        
     }
 
   }
   
   /*/ Large devices (desktops, 992px and up)*/
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+
 
     .nav-link {
         font-size: 15px;
-        margin-left: 25px;
+        margin-left: 20px;
         color: #222222af;
     }
   
@@ -257,7 +308,8 @@ h1 {
   
   /*/ Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-  
+    body {
+    }
       
   
   

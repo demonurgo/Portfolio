@@ -24,94 +24,114 @@
 ---------------------
 -------------------->
 
-<header>
+<header class="container">
 <nav class="navbar navbar-expand-md">
-    <div class="container">
-
-        <a class="navbar-brand" href="index.html">Pedro Augusto</a>
 
 
-        <ul id="nav-vertical" class="ms-auto navbar-nav">
+                <a class="navbar-brand" href="index.html">Pedro Augusto</a> 
 
-            <li>
-                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-            </li>
-            
-            <li>
-                <a class="nav-link" href="#">Sobre mim</a>
-            </li>
+                <div class="d-flex ms-auto">
+                <ul id="nav-vertical" class="ms-auto navbar-nav">
 
-            <li>
-                <a class="nav-link" href="#">Projetos</a>
-            </li>
-
-            <li>
-                <a class="nav-link" aria-disabled="true">Contato</a>
-            </li>
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="index.html">INÍCIO</a>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-link" href="#">SOBRE</a>
+                    </li>
         
-        </ul>
-
-
-        <!-- HAMBURGER BOTÃO -->
-        <button class="hamburger" type="button">
-            <div class="bar"></div>
-
-        </button>   
-        <!-- HAMBURGER BOTÃO -->
-
-
+                    <li>
+                        <a class="nav-link" href="#">PROJETOS</a>
+                    </li>
+        
+                    <li>
+                        <a class="nav-link" aria-disabled="true">CONTATO</a>
+                    </li>
+                
+                </ul>
+                </div> 
+                <!-- HAMBURGER BOTÃO -->
+                <button class="hamburger" type="button">
+                    <div class="bar"></div>
+        
+                </button>   
+                <!-- HAMBURGER BOTÃO -->
 
 </nav>
     
+    <nav class="mobile-nav">
+        
+        <ul class="navbar-nav">
+            <li>
+                <a class="nav-link" href="">INÍCIO</a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="">SOBRE MIM</a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="">PROJETOS</a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="">CONTATO</a>
+            </li>
+        </ul>
+
+        
+
+    </nav>
 
 </header>
 
 
 
-<nav class="mobile-nav">
-    
-    <ul class="navbar-nav">
-        <li>
-            <a class="nav-link" href="">Início</a>
-        </li>
 
-        <li>
-            <a class="nav-link" href="">Sobre mim</a>
-        </li>
-
-        <li>
-            <a class="nav-link" href="">Projetos</a>
-        </li>
-
-        <li>
-            <a class="nav-link" href="">Contato</a>
-        </li>
-    </ul>
-
-    
-
-</nav>
 
 <div class="black-box"></div>
 
-<section id="sobre_mim" class="mt-5">
+<section id="sobre_mim" class="mt-5 mb-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 d-flex">
-                
-                <h1>Sobre mim</h1>
+            <div class="col-md-8 d-flex">
 
-            </div>
+              <div class="m-4 border align-self-center">
 
-            <div class="col-lg-6 d-flex">
-                
-                
-                <img width="400" class="img-fluid" src="img/avatar.png">
+                <h1 class="mb-4">Sobre mim</h1>
 
+                <div class="container">
+    
+                        <ul class="list-sobre-mim">
+                            <li>
+                                <p>  <i class="fa-regular fa-file-code"></i> Desenvolvedor de Software</p>
+                            </li>
+
+                            <li>
+                                <p> <i class="fa-regular fa-pen-to-square"></i>Cursando Análise e desenvolvimento de sistemas</p>
+                            </li>
+                                
+                            <li>
+                                <p> <i class="fa-regular fa-window-restore"></i>Interesse em ser um proffisional full-stack</p>
+                            </li>
+
+                            <li>
+                                <p> <i class="fa-regular fa-eye"></i>Sempre buscando novos conhecimentos</p>
+                            </li>
+                        </ul>    
+
+                </div>
             </div>
         </div>
 
+        <div class="col-md-4 d-flex">
+                
+            <div  class="align-self-center">
+                <img  width="400" class="img-fluid" src="img/avatar.png">
+            </div>
 
+        </div>
 
     </div>
 
