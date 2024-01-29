@@ -2,11 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    background-color: #ffffff;
-
-
-}
 body {
     background-color: #ffffff;
     /*border: 1px red solid;*/
@@ -48,13 +43,16 @@ p {
 
 img {
     border-top-left-radius: 30px;
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius:  5px;
 
 }
 
 
 .container {
-    border: 1px solid ;*/
+    border: 1px solid black;
+    
 }
 
 /*******************************
@@ -147,6 +145,7 @@ img {
 .mobile-nav.is-active {
     left: 20%;
 
+
 }
 
 .mobile-nav a {
@@ -179,6 +178,7 @@ img {
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
         opacity: .5;
+
 }
 
 
@@ -244,6 +244,31 @@ img {
 
 li p i {
     margin-right: 10px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border-radius: 25px;
+}
+
+footer h1 {
+    color: #ffffff;
+}
+
+.texto-footer {
+    font-family: 'LilGrotesk-Medium';
+    letter-spacing: .8px;
+    color: whitesmoke;
+}
+
+.footer-nome {
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: 'Optician';
+    font-weight: 500;
+    letter-spacing: 5px;
 }
 
 /*/ Extra small devices (portrait phones, less than 576px)*/
@@ -312,8 +337,7 @@ li p i {
   
   /*/ Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-    body {
-    }
+
       
   
   

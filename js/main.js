@@ -34,16 +34,16 @@ window.onload = function () {
 
 function projetos() {
     window.scrollTo({
-        top:1000,
+        top:700,
         left: 0,
         behavior: 'smooth',
     });
 
 }
 
-function sobre() {
+function contato() {
     window.scrollTo({
-        top:0,
+        top:1000,
         left: 0,
         behavior: 'smooth',
     });
