@@ -11,6 +11,8 @@
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/0c6a816720.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css"> 
     
 </head>
@@ -25,7 +27,7 @@
 -------------------->
 
 <header class="container">
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md sticky">
 
 
                 <a class="navbar-brand" href="index.html">Pedro Augusto</a> 
@@ -38,15 +40,15 @@
                     </li>
                     
                     <li>
-                        <a class="nav-link" href="#">SOBRE</a>
+                        <a class="nav-link" href="#" data-target="sobre_mim">SOBRE</a>
                     </li>
         
                     <li>
-                        <a class="nav-link" href="#">PROJETOS</a>
+                        <a class="nav-link" onclick="projetos()" href="#" data-target="projetos">PROJETOS</a>
                     </li>
         
                     <li>
-                        <a class="nav-link" aria-disabled="true">CONTATO</a>
+                        <a class="nav-link" href="#" data-target="contato">CONTATO</a>
                     </li>
                 
                 </ul>
@@ -64,19 +66,19 @@
         
         <ul class="navbar-nav">
             <li>
-                <a class="nav-link" href="">INÍCIO</a>
+                <a class="nav-link" href="#" data-target="inicio">INÍCIO</a>
             </li>
 
             <li>
-                <a class="nav-link" href="">SOBRE MIM</a>
+                <a class="nav-link" href="#" data-target="sobre_mim">SOBRE MIM</a>
             </li>
 
             <li>
-                <a class="nav-link" href="">PROJETOS</a>
+                <a class="nav-link" onclick="projetos()" data-target="projetos">PROJETOS</a>
             </li>
 
             <li>
-                <a class="nav-link" href="">CONTATO</a>
+                <a class="nav-link" href="#" data-target="contato">CONTATO</a>
             </li>
         </ul>
 
@@ -135,9 +137,110 @@
 
     </div>
 
-</section>    
+</section> 
+
+<section id="projetos">
+
+    <div class="container">
+
+        <div class="row">
+
+            <h1 class="mb-4 d-flex justify-content-center">PROJETOS</h1>
+
+            <!-- BLOCO 1 -->
+                <div class="col-md-4">
+                
+                    
+                    <div class="m-4 border">
+
+                            <div class="container">
+            
+                            Projeto 1
+
+                            </div>
+
+                    </div>
 
 
+                    <div class="m-4 border">
+        
+                            <div class="container">
+                
+                            Projeto 2
+            
+                            </div>
+            
+                    </div>
+
+                </div>
+            <!-- BLOCO 1 -->
+                
+
+            <!-- BLOCO 2 -->
+                <div class="col-md-4">
+                    
+                
+                    <div class="m-4 border">
+
+                        <div class="container">
+            
+                            Projeto 3
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="m-4 border">
+        
+                        <div class="container">
+                
+                            Projeto 4
+            
+                        </div>
+            
+                    </div>        
+                    
+                </div>
+
+            <!-- BLOCO 2 -->
+            
+            
+            <!-- BLOCO 3 -->    
+                <div class="col-md-4">   
+                
+                    <div class="m-4 border">
+    
+                        <div class="container">
+            
+                            Projeto 5
+        
+                        </div>
+                    
+                    </div>
+    
+    
+                    <div class="m-4 border">
+        
+                        <div class="container">
+                    
+                            Projeto 6
+                
+                        </div>
+            
+                    </div>
+    
+                </div>
+            <!-- BLOCO 3 -->    
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    
     <script src="js/main.js"></script>
     <!--- POPPERJS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
