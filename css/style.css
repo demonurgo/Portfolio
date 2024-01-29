@@ -41,7 +41,7 @@ p {
 
 
 
-img {
+.avatar {
     border-top-left-radius: 30px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 30px;
@@ -233,6 +233,33 @@ img {
 /*******************************
 ************NAV BAR*************
 *******************************/
+
+.projeto_texto {
+    margin-top: 10px;
+    font-family: 'LilGrotesk-Medium';
+    letter-spacing: .8px;
+    color: grey;
+    transition: .3s ease-in-out;
+}
+
+.projeto_texto:hover {
+    color: #ffffff;
+}
+
+.projeto {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: background .5s ease-in-out;
+}
+
+.projeto:hover {
+    background-color: black;
+    color: whitesmoke;
+    
+}
+
+
 
 .list-sobre-mim {
     list-style: none;
