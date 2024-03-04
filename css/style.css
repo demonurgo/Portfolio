@@ -292,11 +292,7 @@ li p i {
 }
 
 * {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
+
 }
 
 main {
@@ -304,6 +300,10 @@ main {
 }
 
 footer {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
     color: var(--color-neutral-40);
 }
@@ -320,6 +320,11 @@ footer {
 }
 
 #footer_contacts h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'Optician';
+    font-weight: 500;
+    letter-spacing: 5px;
     margin-bottom: 0.75rem;
 }
 
@@ -441,8 +446,7 @@ footer {
 
 /*footer {
     margin: 0;
-    padding: 0;
-    background-color: black;
+    padding: 0; 
     border-radius: 25px;
 }
 
